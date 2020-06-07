@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Fascinating and informational videos about SpaceX, spaceflight and modern engineering.">
+	<meta name="keywords" content="SpaceX, Falcon 9, Spaceflight, NASA, Mars, Crew Dragon, Engineering, Astronauts, Rockets, Falcon Heavy, Starhopper">
+	<title>SpaceX - Videos</title>
+	<link rel="stylesheet" href="https://use.typekit.net/mjz1wvv.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="icon" type="image/svg+xml" href="./images/icon-falcon.svg">
+</head>
+
+<body>
+	<header>
+		<nav class="container">
+			<h1><a href="index.html">SPACEX</a></h1>
+			<button class="btn btn-nav-toggle" id="btn-nav-toggle"></button>
+			<ul id="menu">
+				<li>
+					<a href="index.html">
+						<img src="images/icon-falcon.svg" alt="Icon of falcon" height="32px">
+						<span>Falcon 9</span>
+					</a>
+				</li>
+				<li>
+					<a href="roadmap.html">
+						<img src="images/icon-mars.svg" alt="Icon of the planet Mars" height="32px">
+						<span>Roadmap</span>
+					</a>
+				</li>
+				<li>
+					<a href="launches.html">
+						<img src="images/icon-launch.svg" alt="Icon of a rocket launch" height="32px">
+						<span>Launches</span>
+					</a>
+				</li>
+				<li>
+					<a href="videos.html" class="active">
+						<img src="images/icon-videos.svg" alt="Icon of a television" height="32px">
+						<span>Videos</span>
+					</a>
+				</li>
+				<li>
+					<a href="contact.html">
+						<img src="images/icon-contact.svg" alt="Icon of a letter in an envelope" height="32px">
+						<span>Contact</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main id="videos">
+		<section id="section-cinema" class="fill-section bg-dark">
+			<div class="container">
+				<div class="page-title">
+					<h1>Videos</h1>
+					<h3>Experience the cutting edge technology behind SpaceX' rockets</h3>
+				</div>
+				<div id="videoplayer">
+					<iframe id="video-iframe" src="https://www.youtube.com/embed/y4xBFHjkUvw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="video-meta">
+					<h3 id="video-title"></h3>
+					<span>By <strong id="video-author"></strong></span>
+					<p id="video-description"></p>
+				</div>
+			</div>
+		</section>
+		<section id="video-library" class="bg-light">
+			<div class="container">
+				<h2>Other videos</h2>
+				<div id="video-library-wrapper"></div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<span>Connect with us on social media</span>
+			<ul class="text-center">
+				<li>
+					<a href="#">
+						<img src="./images/icon-facebook.svg" alt="Facebook icon">
+						<span>Facebook</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./images/icon-instagram.svg" alt="Instagram icon">
+						<span>Instagram</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./images/icon-twitter.svg" alt="Twitter icon">
+						<span>Twitter</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./images/icon-youtube.svg" alt="Youtube icon">
+						<span>Youtube</span>
+					</a>
+				</li>
+			</ul>
+
+			<div class="copyright-notice">
+				<span>Images courtesy of <a href="https://www.spacex.com/">SpaceX</a>, <a href="https://www.nasa.gov/">NASA</a>, <a href="https://icons8.com/">Icons8</a></span>
+				<span>Copyright © 2020 Mikkel Andersen</span>
+			</div>
+		</div>
+	</footer>
+	<script src="scripts/main.js"></script>
+	<script src="scripts/videos.js"></script>
+</body>
+
+</html>

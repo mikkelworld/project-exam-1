@@ -3,57 +3,151 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>SpaceX Microsite</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="The Falcon 9 rocket system is a marvel of modern engineering. We take you through the different components and explain how it works.">
+	<meta name="keywords" content="SpaceX, Falcon 9, Spaceflight, NASA, Mars, Crew Dragon, Engineering, Astronauts, Rockets">
+	<title>SpaceX - Falcon 9</title>
 	<link rel="stylesheet" href="https://use.typekit.net/mjz1wvv.css">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles/style.css">
+	<link rel="icon" type="image/svg+xml" href="./images/icon-falcon.svg">
 </head>
 
 <body>
 	<header>
-		<h1>SPACEX</h1>
-		<nav>
-			<div class="container">
-				<ul>
-					<li>
-						<a href="#">Falcon 9</a>
-					</li>
-					<li>
-						<a href="#">Mars roadmap</a>
-					</li>
-					<li>
-						<a href="#">Upcoming launches</a>
-					</li>
-					<li>
-						<a href="#">Videos</a>
-					</li>
-					<li>
-						<a href="#">Contact</a>
-					</li>
-				</ul>
-			</div>
+		<nav class="container">
+			<h1><a href="index.html">SPACEX</a></h1>
+			<button class="btn btn-nav-toggle" id="btn-nav-toggle"></button>
+			<ul id="menu">
+				<li>
+					<a href="index.html" class="active">
+						<img src="images/icon-falcon.svg" alt="Icon of falcon" height="32px">
+						<span>Falcon 9</span>
+					</a>
+				</li>
+				<li>
+					<a href="roadmap.html">
+						<img src="images/icon-mars.svg" alt="Icon of the planet Mars" height="32px">
+						<span>Roadmap</span>
+					</a>
+				</li>
+				<li>
+					<a href="launches.html">
+						<img src="images/icon-launch.svg" alt="Icon of a rocket launch" height="32px">
+						<span>Launches</span>
+					</a>
+				</li>
+				<li>
+					<a href="videos.html">
+						<img src="images/icon-videos.svg" alt="Icon of a television" height="32px">
+						<span>Videos</span>
+					</a>
+				</li>
+				<li>
+					<a href="contact.html">
+						<img src="images/icon-contact.svg" alt="Icon of a letter in an envelope" height="32px">
+						<span>Contact</span>
+					</a>
+				</li>
+			</ul>
 		</nav>
 	</header>
-	<section class="container mb-3">
-		<h2>FALCON 9</h2>
-		<p>The Falcon 9 rocket is the world's most reliable and affordable rocket system. Developed by SpaceX in 2011, the Falcon 9 is capable of carrying up to 29.000 kg of cargo into orbit as well as autonomously landing its booster rocket which can then be gathered, refurbished and reused within two weeks. This makes the Falcon 9 the cheapest space launch system in spaceflight history.</p>
-	</section>
-	<section class="container falcon-9-section">
-		<div>
-			<div class="infobox">
-				<h4>Title</h4>
-				<p>Description of this specific thingy</p>
+
+	<main id="falcon-9">
+		<section id="intro" class="fill-section bg-light">
+			<div class="container page-title text-center">
+				<h1>FALCON 9</h1>
+				<h3>Engineering a masterpiece for the future</h3>
+				<div class="textbox textbox-dark">
+					<p>The Falcon 9 is truly a marvel of engineering. Developed and manufactured by SpaceX, Falcon 9 is capable of both cargo and crew missions as well as vertical landings.</p>
+					<p>Falcon 9 is currently the most affordable way to put satellites or humans into orbit.</p>
+				</div>
+			</div>
+			<button class="btn-scroller" onclick="scrollToSection('falcon-9', 1)"></button>
+		</section>
+		<section id="slide-1" class="fill-section bg-dark">
+			<div class="fadebox">
+				<div class="container">
+					<h2>Payload</h2>
+					<h3>Adaptive and modular</h3>
+					<p>Atop the Falcon 9 rocket sits the payload which can carry both crew and cargo.</p>
+					<p>By changing the configuration of the rocket, SpaceX can maximize cargo capacity for unmanned flights.</p>
+					<p>The Crew Dragon was successfully launched with a Falcon 9 rocket and brought two astronauts to the International Space Station in May of 2020.</p>
+				</div>
+			</div>
+			<button class="btn-scroller" onclick="scrollToSection('falcon-9', 2)"></button>
+		</section>
+		<section id="slide-2" class="fill-section bg-dark">
+			<div class="fadebox">
+				<div class="container">
+					<h2>Second stage</h2>
+					<h3>Orbital precision</h3>
+					<p>The second stage engine takes over after stage separation and is in charge of bringing the payload to the desired orbit.</p>
+					<p>Designed for multiple ignitions, the second stage engine can be used to place several payloads into different orbits.</p>
+				</div>
+			</div>
+			<button class="btn-scroller" onclick="scrollToSection('falcon-9', 3)"></button>
+		</section>
+		<section id="slide-3" class="fill-section bg-dark">
+			<div class="fadebox">
+				<div class="container">
+					<h2>Interstage</h2>
+					<h3>Stage separation</h3>
+					<p>The interstage connects the first and second stage of the Falcon 9 rocket. It is in charge of the release and separation system that decouples the two stages after Falcon 9 leaves the atmosphere.</p>
+					<p>The grid fins that help guide the first stage back to a safe and vertical landing are also attached to the interstage.</p>
+				</div>
+			</div>
+			<button class="btn-scroller" onclick="scrollToSection('falcon-9', 4)"></button>
+		</section>
+		<section id="slide-4" class="fill-section bg-dark">
+			<div class="fadebox">
+				<div class="container">
+					<h2>First stage</h2>
+					<h3>The heavy lift</h3>
+					<p>The first stage takes Falcon 9 and its payload from the launch pad and through the atmosphere, using its nine Merlin engines to escape earths gravity.</p>
+					<p>Upon decoupling, the first stage returns to earth, using its grid fins to guide it down to the launch pad or drone ship. The entry burn slows its descent, allowing it to land softly and be reused.</p>
+				</div>
+			</div>
+			<button class="btn-scroller scroll-up" onclick="scrollToSection('falcon-9', 0)"></button>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<span>Connect with us on social media</span>
+			<ul class="text-center">
+				<li>
+					<a href="#">
+						<img src="./images/icon-facebook.svg" alt="Facebook icon">
+						<span>Facebook</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./images/icon-instagram.svg" alt="Instagram icon">
+						<span>Instagram</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./images/icon-twitter.svg" alt="Twitter icon">
+						<span>Twitter</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./images/icon-youtube.svg" alt="Youtube icon">
+						<span>Youtube</span>
+					</a>
+				</li>
+			</ul>
+
+			<div class="copyright-notice">
+				<span>Images courtesy of <a href="https://www.spacex.com/">SpaceX</a>, <a href="https://www.nasa.gov/">NASA</a>, <a href="https://icons8.com/">Icons8</a></span>
+				<span>Copyright © 2020 Mikkel Andersen</span>
 			</div>
 		</div>
-		<img src="images/falcon9-render.png" width="150px" alt="Detailed image of the Falcon 9 Rocket seen from the side.">
-		<div></div>
-	</section>
-	<footer>
-
-		<h2>Welcome to mars</h2>
-
 	</footer>
-	<script src="scripts/script.js"></script>
+	<script src="scripts/main.js"></script>
 </body>
 
 </html>

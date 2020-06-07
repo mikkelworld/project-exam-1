@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="This interactive timeline explains how and when humans will visit, and colonize, Mars.">
+	<meta name="keywords" content="SpaceX, Falcon 9, Starship, Moon, Spaceflight, NASA, Mars, Crew Dragon, Engineering, Astronauts, Rockets">
+	<title>SpaceX - Roadmap to Mars</title>
+	<link rel="stylesheet" href="https://use.typekit.net/mjz1wvv.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="icon" type="image/svg+xml" href="./images/icon-falcon.svg">
+</head>
+
+<body>
+	<header>
+		<nav class="container">
+			<h1><a href="index.html">SPACEX</a></h1>
+			<button class="btn btn-nav-toggle" id="btn-nav-toggle"></button>
+			<ul id="menu">
+				<li>
+					<a href="index.html">
+						<img src="images/icon-falcon.svg" alt="Icon of falcon" height="32px">
+						<span>Falcon 9</span>
+					</a>
+				</li>
+				<li>
+					<a href="roadmap.html" class="active">
+						<img src="images/icon-mars.svg" alt="Icon of the planet Mars" height="32px">
+						<span>Roadmap</span>
+					</a>
+				</li>
+				<li>
+					<a href="launches.html">
+						<img src="images/icon-launch.svg" alt="Icon of a rocket launch" height="32px">
+						<span>Launches</span>
+					</a>
+				</li>
+				<li>
+					<a href="videos.html">
+						<img src="images/icon-videos.svg" alt="Icon of a television" height="32px">
+						<span>Videos</span>
+					</a>
+				</li>
+				<li>
+					<a href="contact.html">
+						<img src="images/icon-contact.svg" alt="Icon of a letter in an envelope" height="32px">
+						<span>Contact</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main id="roadmap">
+		<section id="intro" class="fill-section bg-light">
+			<div class="container page-title text-center">
+				<h1>ROADMAP TO MARS</h1>
+				<h3>Mankinds greatest adventure</h3>
+			</div>
+			<div class="container">
+				<div class="textbox textbox-dark">
+					<p>In the coming years, mankind will begin our journey to become a multiplanetary species.</p>
+					<p>Scroll down to learn more about how we plan to reach Mars within the next decade.</p>
+				</div>
+			</div>
+			<button class="btn-scroller" onclick="scrollToSection('roadmap', 1)"></button>
+		</section>
+		<section id="slide-1" class="fill-section bg-light">
+			<div class="container">
+				<h2>2020</h2>
+				<h3>Starship design and testing</h3>
+				<div class="textbox textbox-dark">
+					<p>SpaceX will continue testing and finalizing the design of Starship, the vehicle that will eventually transport humans to other planets.</p>
+					<p>The final design has an estimated payload capacity of over 100 metric tonnes and up to 100 passengers.</p>
+				</div>
+			</div>
+			<button class="btn-scroller" onclick="scrollToSection('roadmap', 2)"></button>
+		</section>
+		<section id="slide-2" class="fill-section bg-dark">
+			<div class="container">
+				<h2>2021</h2>
+				<h3>First Starship cargo missions</h3>
+				<div class="textbox textbox-light">
+					<p>Starship will begin launching into orbit as early as 2021. The spacecraft will be configured for cargo and will lay the foundation for longer missions in the future.</p>
+					<p>Cargo flights and landings will provide important data for SpaceX before the journey to Mars.</p>
+				</div>
+			</div>
+			<button class="btn-scroller" onclick="scrollToSection('roadmap', 3)"></button>
+		</section>
+		<section id="slide-3" class="fill-section bg-dark">
+			<div class="container">
+				<h2>2023</h2>
+				<h3>Moon missions</h3>
+				<div class="textbox textbox-light">
+					<p>As part of NASA's Gateway project, SpaceX will contribute with cargo missions in 2023.</p>
+					<p>The Gateway project seeks to establish a long-term presence around the moon to serve as a gateway to the rest of the solar system.</p>
+				</div>
+			</div>
+			<button class="btn-scroller" onclick="scrollToSection('roadmap', 4)"></button>
+		</section>
+		<section id="slide-4" class="fill-section bg-dark">
+			<div class="container">
+				<h2>2024</h2>
+				<h3>Lunar lander</h3>
+				<div class="textbox textbox-light">
+					<p>NASA's Artemis 3 mission aims to land humans on the lunar surface in 2024. SpaceX, along with Blue Origin and Dynetics are competing for the lunar lander contract.</p>
+					<p>This will be the first time humans have landed on the moon since 1972.</p>
+				</div>
+			</div>
+			<button class="btn-scroller" onclick="scrollToSection('roadmap', 5)"></button>
+		</section>
+		<section id="slide-5" class="fill-section bg-dark">
+			<div class="container">
+				<h2>2024 - 2025</h2>
+				<h3>First mars missions</h3>
+				<div class="textbox textbox-light">
+					<p>SpaceX' Elon Musk has indicated that missions to Mars could take place by as early as 2024 or 2025.</p>
+					<p>These missions will transport cargo as staging missions before crewed flights take place.</p>
+				</div>
+			</div>
+			<button class="btn-scroller" onclick="scrollToSection('roadmap', 6)"></button>
+		</section>
+		<section id="slide-6" class="fill-section bg-light">
+			<div class="container">
+				<h2>2025 and beyond</h2>
+				<h3>Humans on Mars</h3>
+				<div class="textbox textbox-dark">
+					<p>After multiple successful landings and cargo missions to the martian surface, crewed flights will begin.</p>
+					<p>Over time, the human colony on Mars will grow. According to Elon Musk, the Mars colony may turn into a city by 2050.</p>
+				</div>
+			</div>
+			<button class="btn-scroller scroll-up" onclick="scrollToSection('roadmap', 0)"></button>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<span>Connect with us on social media</span>
+			<ul class="text-center">
+				<li>
+					<a href="#">
+						<img src="./images/icon-facebook.svg" alt="Facebook icon">
+						<span>Facebook</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./images/icon-instagram.svg" alt="Instagram icon">
+						<span>Instagram</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./images/icon-twitter.svg" alt="Twitter icon">
+						<span>Twitter</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./images/icon-youtube.svg" alt="Youtube icon">
+						<span>Youtube</span>
+					</a>
+				</li>
+			</ul>
+			
+			<div class="copyright-notice">
+				<span>Images courtesy of <a href="https://www.spacex.com/">SpaceX</a>, <a href="https://www.nasa.gov/">NASA</a>, <a href="https://icons8.com/">Icons8</a></span>
+				<span>Copyright © 2020 Mikkel Andersen</span>
+			</div>
+		</div>
+	</footer>
+	<script src="scripts/main.js"></script>
+</body>
+
+</html>

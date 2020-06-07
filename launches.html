@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Stay up to date on past and future SpaceX launches. Never miss another launch.">
+	<meta name="keywords" content="SpaceX, Falcon 9, Spaceflight, NASA, Mars, Crew Dragon, Engineering, Astronauts, Rockets, Launches">
+	<title>SpaceX - Launches</title>
+	<link rel="stylesheet" href="https://use.typekit.net/mjz1wvv.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="icon" type="image/svg+xml" href="./images/icon-falcon.svg">
+</head>
+
+<body>
+	<header>
+		<nav class="container">
+			<h1><a href="index.html">SPACEX</a></h1>
+			<button class="btn btn-nav-toggle" id="btn-nav-toggle"></button>
+			<ul id="menu">
+				<li>
+					<a href="index.html">
+						<img src="images/icon-falcon.svg" alt="Icon of falcon" height="32px">
+						<span>Falcon 9</span>
+					</a>
+				</li>
+				<li>
+					<a href="roadmap.html">
+						<img src="images/icon-mars.svg" alt="Icon of the planet Mars" height="32px">
+						<span>Roadmap</span>
+					</a>
+				</li>
+				<li>
+					<a href="launches.html" class="active">
+						<img src="images/icon-launch.svg" alt="Icon of a rocket launch" height="32px">
+						<span>Launches</span>
+					</a>
+				</li>
+				<li>
+					<a href="videos.html">
+						<img src="images/icon-videos.svg" alt="Icon of a television" height="32px">
+						<span>Videos</span>
+					</a>
+				</li>
+				<li>
+					<a href="contact.html">
+						<img src="images/icon-contact.svg" alt="Icon of a letter in an envelope" height="32px">
+						<span>Contact</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main id="launches">
+		<section id="section-launches" class="fill-section bg-dark">
+			<div class="container">
+				<div class="page-title">
+					<h1>Launches</h1>
+					<h3>Stay up to date on the latest and upcoming launches from SpaceX</h3>
+				</div>
+				<div class="textbox text-center">
+					<h3>NEXT LAUNCH IN:</h3>
+					<span id="nextLaunchCountdown" class="countdown"></span>
+					<a href="https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA/live" id="btnLivestream" class="btn btn-primary hidden">Watch live</a>
+				</div>
+			</div>
+			<div class="container">
+				<div class="grid c-md">
+					<button class="btn btn-primary" onclick="scrollToSection('launches', 1)">Recent launches</button>
+					<button class="btn btn-primary" onclick="scrollToSection('launches', 2)">Upcoming launches</button>
+				</div>
+			</div>
+		</section>
+		<section id="past-launches" class="fill-section bg-light">
+			<div class="container">
+				<h2>Recent launches</h2>
+				<div id="past-launches-wrapper"></div>
+			</div>
+		</section>
+		<section id="upcoming-launches" class="fill-section bg-dark">
+			<div class="container">
+				<h2>Upcoming launches</h2>
+				<div id="upcoming-launches-wrapper"></div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<span>Connect with us on social media</span>
+			<ul class="text-center">
+				<li>
+					<a href="#">
+						<img src="./images/icon-facebook.svg" alt="Facebook icon">
+						<span>Facebook</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./images/icon-instagram.svg" alt="Instagram icon">
+						<span>Instagram</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./images/icon-twitter.svg" alt="Twitter icon">
+						<span>Twitter</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./images/icon-youtube.svg" alt="Youtube icon">
+						<span>Youtube</span>
+					</a>
+				</li>
+			</ul>
+			
+			<div class="copyright-notice">
+				<span>Images courtesy of <a href="https://www.spacex.com/">SpaceX</a>, <a href="https://www.nasa.gov/">NASA</a>, <a href="https://icons8.com/">Icons8</a></span>
+				<span>Copyright © 2020 Mikkel Andersen</span>
+			</div>
+		</div>
+	</footer>
+	<script src="scripts/main.js"></script>
+	<script src="scripts/launches.js"></script>
+</body>
+
+</html>
